@@ -68,12 +68,12 @@ main > section {
     background-color: #ffbd2c;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
-    color: #fff;
+    color: black;
 }
 
 .btn-border {
     border: 2px solid  #FFC800;
-    color: #fff;
+    color: #333333;
     padding: 12px 35px;
 }
 
@@ -81,6 +81,12 @@ main > section {
     background-color: #009EE3;
 }
 
+/*My carousel*/
+
+#myCarousel,
+.carousel-inner .item img{
+    height:340px;
+}
 /* Sweep To Right */
 .btn-effect {
 	vertical-align: middle;
@@ -284,7 +290,7 @@ main > section {
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
 
-    background-color: #FFD000;
+    background-color: rgba(0,0,0,0.8);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 5px 0;
 }
@@ -305,20 +311,15 @@ h1.navbar-brand img{
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #EEB005;
     font-size: 16px;
     text-transform: uppercase;
 }
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #00006e;
+
+.navbar-inverse .navbar-nav > li > a:active {
+    color: #FF7200;
 }
 
-.navbar-inverse .navbar-nav > .active > a {
-    background-color: #00006e;
-}
-.navbar-inverse .navbar-nav > .active > a{
-    background-color: #00006e;
-}
 /*=================================================================
 	Home Slider
 ==================================================================*/
@@ -529,12 +530,12 @@ h1.navbar-brand img{
 ==================================================================*/
 
 #about {
-    background-color: #000066;
-    color: #fff;
+    background-color: #F5F5F5;
+    color: #333333;
 }
 
 #about h3 {
-    color: #fff;
+    color: #333333;
     margin: 0 0 35px;
     text-transform: uppercase;
 }
@@ -747,6 +748,12 @@ ul.external li a:hover {
 	Gallery Individual
 ==================================================================*/
 
+
+#Gallery{
+    margin-top: 40px;
+    background-color: #F5F5F5;
+}
+
 .gallery-wrapper{
     margin: 0;
     padding: 0;
@@ -777,7 +784,9 @@ ul.external li a:hover {
     margin-top:10%;
 }
 
-
+#pride{
+    background-color: #F5F5F5;
+}
 /*=================================================================
 	Individual Picture
 ==================================================================*/
@@ -1055,14 +1064,16 @@ textarea.form-control {
 
 .contact-details h3 {
     border-bottom: 1px solid #FFC700;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 15px;
     padding-bottom: 15px;
     text-transform: uppercase;
+    font-size:35px;
 }
 
 .contact-details p {
     line-height: 30px;
+    font-weight:700;
 }
 
 .contact-details p i {
@@ -1095,22 +1106,22 @@ textarea.form-control {
 
 #footer {
     background-color: #2E2E2E;
-    padding: 70px 0;
+    padding: 10px 0;
     color: #fff;
 }
 
 .footer-content {
-    width: 390px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .footer-content > div {
     margin-bottom: 40px;
 }
 
-.footer-content > div > p:first-child {
-    margin-bottom: 15px;
+.footer-content p{
+    margin: 50px 0;
     text-transform: uppercase;
+
 }
 
 .subscribe-form {
@@ -1201,7 +1212,7 @@ textarea.form-control {
 
 .footer-content > p {
     color: #ababab;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
@@ -1216,9 +1227,17 @@ textarea.form-control {
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
+
+    #contact{
+        margin-top: 50px;
+    }
 /*about*/
     #about .welcome-block img {
         margin-bottom: 30px;
+    }
+
+    #about .welcome-block a{
+        margin-bottom:30px;
     }
 
 /* portfolio */
@@ -1238,6 +1257,10 @@ textarea.form-control {
 
 @media (min-width: 768px) and (max-width: 979px) {
 
+
+    #contact{
+        margin-top: 50px;
+    }
 /* home slider  */
     .caption-content h2 {
         font-size: 40px;
@@ -1252,6 +1275,9 @@ textarea.form-control {
     }
 
 /* about */
+    #about .welcome-block a{
+        margin-bottom:30px;
+    }
     .recent-works {
         margin-bottom: 50px;
     }
@@ -1296,10 +1322,16 @@ textarea.form-control {
 
 @media only screen and (max-width: 767px) {
 
+
+    #contact{
+        margin-top: 150px;
+    }
     body {
         font-size: 14px;
     }
-
+    #about .welcome-block a{
+        margin-bottom:30px;
+    }
     .parallax {
         background-position: centet tip !important;
     }
@@ -1446,6 +1478,10 @@ textarea.form-control {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
+
+    #contact{
+        margin-top: 50px;
+    }
     .sec-title h2:after {
         left: 38%;
     }
@@ -1467,6 +1503,9 @@ textarea.form-control {
 
     #about .welcome-block h3 {
         margin: 0 0 35px;
+    }
+    #about .welcome-block a{
+        margin-bottom:30px;
     }
 
 /* service */
