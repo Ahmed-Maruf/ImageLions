@@ -797,7 +797,6 @@ table{
     width:80%;
 }
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
 }
 th, td {
@@ -1273,6 +1272,7 @@ textarea.form-control {
     .caption-content strong {
         font-size: 45px;
     }
+
 
 /* about */
     #about .welcome-block a{
